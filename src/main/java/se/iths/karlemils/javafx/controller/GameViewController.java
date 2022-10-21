@@ -1,4 +1,4 @@
-package se.iths.karlemils.javafx;
+package se.iths.karlemils.javafx.controller;
 
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;

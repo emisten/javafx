@@ -5,4 +5,8 @@ module se.iths.karlemils.javafx {
 
     opens se.iths.karlemils.javafx to javafx.fxml;
     exports se.iths.karlemils.javafx;
+    exports se.iths.karlemils.javafx.model;
+    opens se.iths.karlemils.javafx.model to javafx.fxml;
+    exports se.iths.karlemils.javafx.controller;
+    opens se.iths.karlemils.javafx.controller to javafx.fxml;
 }
