@@ -28,6 +28,7 @@ public class GameViewController {
         context.setFill(Color.web("#eddeaf"));
         context.fillRect(0,0,400,400);
         context.setFill(Color.BLUE);
-        context.fillRect(mouseEvent.getSceneX()-(5/2), mouseEvent.getY()-(5/2), 5, 5);
+        context.fillRect((snake.getPosition().x() * 10), (snake.getPosition().y() * 10), 10,10);
+
     }
 }

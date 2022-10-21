@@ -14,15 +14,10 @@ public class SnakeModel {
         this.position = new Position(19,19);
         this.direction = Direction.UP;
     }
+
+    public Position getPosition() {
+        return position;
+    }
 }
 
 
-
-record Position (int x, int y){}
-
-enum Direction{
-    UP,
-    DOWN,
-    LEFT,
-    RIGHT
-}
