@@ -46,7 +46,8 @@ public class GameViewController {
         context.setFill(Color.web("#eddeaf"));
         context.fillRect(0, 0, 400, 400);
         context.setFill(Color.web("#004B87"));
-        context.fillRect((snake.getPosition().x() * 10), (snake.getPosition().y() * 10), 10, 10);
+        for (var segment : snake.getPositionList())
+        context.fillRect((segment.x() * 10), (segment.y() * 10), 10, 10);
 
     }
 
