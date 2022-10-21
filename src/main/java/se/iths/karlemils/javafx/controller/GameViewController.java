@@ -32,8 +32,9 @@ public class GameViewController {
             if( time < 0.2)
                 return;
 
-            //Todo: update snake position
+           snake.update();
            render();
+           time = 0.0f;
         }
     };
 
