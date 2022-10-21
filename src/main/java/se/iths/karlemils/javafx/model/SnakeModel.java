@@ -5,13 +5,13 @@ public class SnakeModel {
     private Direction direction;
 
 
-    public SnakeModel (Position position, Direction direction){
+    public SnakeModel(Position position, Direction direction) {
         this.position = position;
         this.direction = direction;
     }
 
-    public SnakeModel(){
-        this.position = new Position(19,19);
+    public SnakeModel() {
+        this.position = new Position(19, 19);
         this.direction = Direction.UP;
     }
 
@@ -20,7 +20,7 @@ public class SnakeModel {
     }
 
     public void update() {
-        switch (direction){
+        switch (direction) {
 
             case UP -> position = new Position(position.x(), position.y() - 1);
 
@@ -32,6 +32,27 @@ public class SnakeModel {
 
         }
     }
+
+    public void setUp() {
+        if(!direction.equals(direction.DOWN))
+        this.direction = Direction.UP;
+    }
+
+    public void setDown() {
+        if(!direction.equals(direction.UP))
+        this.direction = Direction.DOWN;
+    }
+
+    public void setRight() {
+        if(!direction.equals(direction.LEFT))
+        this.direction = Direction.RIGHT;
+
+    }
+
+    public void setLeft() {
+        if(!direction.equals(direction.RIGHT))
+        this.direction = Direction.LEFT;
+
+    }
+
 }
-
-
