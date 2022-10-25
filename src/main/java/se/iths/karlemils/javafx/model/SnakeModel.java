@@ -42,7 +42,14 @@ public class SnakeModel {
             case RIGHT -> positionList.add (0,position = new Position(position.x() + 1, position.y()));
 
         }
+
+
+
         //Todo: if not eating an apple, remove move last segment from list.
+
+        //Todo: If colliding with walls. Game over. Stop updating!!
+
+        //Todo: Colliding with ourself, GaME OVER!
 
     }
 
