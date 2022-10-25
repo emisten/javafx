@@ -10,6 +10,8 @@ import se.iths.karlemils.javafx.model.SnakeModel;
 
 public class GameViewController {
 
+    public static final int LEFT_WALL = 10;
+
 
     public Canvas canvas;
 
